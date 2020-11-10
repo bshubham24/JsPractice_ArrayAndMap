@@ -37,3 +37,15 @@ let empWage = calcDailyWage(totalEmpHrs);
 console.log("Daily Wage Array: "+empDailyWageArray);
 console.log("UC6: Total working days: "+totalWorkingDays);
 console.log("Total emp hours = "+totalEmpHrs+" Total employee wage = "+empWage);
+
+let totalEmpWage = 0;
+function sum(dailyWage){
+    totalEmpWage += dailyWage;
+}
+empDailyWageArray.forEach(sum);
+console.log("UC7A - Total Days: "+totalWorkingDays+" Total hrs: "+totalEmpHrs+" Emp Wage:"+totalEmpWage);
+
+function totalWages(totalWage,dailyWage){
+    return totalWage + dailyWage;
+}
+console.log("UC7A - Emp Wage with reduce: "+empDailyWageArray.reduce(totalWages,0));
