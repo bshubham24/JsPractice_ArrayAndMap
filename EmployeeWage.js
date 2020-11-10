@@ -49,3 +49,4 @@ function totalWages(totalWage,dailyWage){
     return totalWage + dailyWage;
 }
 console.log("UC7A - Emp Wage with reduce: "+empDailyWageArray.reduce(totalWages,0));
+
