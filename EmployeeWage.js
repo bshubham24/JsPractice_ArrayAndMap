@@ -84,6 +84,7 @@ function findFullTimeWage(dailyWage){
 
 console.log("UC 7D - First time Full Time Wage earned on day: "+mapDayWithWageArr.find(findFullTimeWage));
 
+
 //UC7E - Check if every element of Full Time Wage is truely holding full time wage
 function isAllFullTimeWage(dailyWage){
     return dailyWage.includes("160");
@@ -91,12 +92,14 @@ function isAllFullTimeWage(dailyWage){
 
 console.log("UC 7E- Is every element holding full time wage- "+fullDayWageArr.every(findFullTimeWage));
 
+
 //UC7F - Check if any Part Time Wage is present
 function isAnyPartTimeWage(dailyWage){
     return dailyWage.includes("80");
 }
 
 console.log("UC 7F- Is part time wage present in any element? - "+mapDayWithWageArr.some(isAnyPartTimeWage));
+
 
 //UC7G - Find Number of days employee worked
 let noOfDays=0;
@@ -130,3 +133,4 @@ empDailyHrsMap.forEach((value,key,map)=>{
 console.log("Full working days: "+fullWorkingDays);
 console.log("Part working days: "+partWorkingDays);
 console.log("Non working days: "+nonWorkingDays);
+
