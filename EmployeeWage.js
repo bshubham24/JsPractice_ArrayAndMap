@@ -93,6 +93,7 @@ function calcDailyWage(empHrs){
 
     console.log("UC 7E- Is every element holding full time wage- "+fullDayWageArr.every(findFullTimeWage));
 
+
     //UC7F - Check if any Part Time Wage is present
     function isAnyPartTimeWage(dailyWage){
         return dailyWage.includes("80");
@@ -108,6 +109,7 @@ function calcDailyWage(empHrs){
         return noOfDays;
     }
     console.log("UC 7G- Number of days employee worked: "+empDailyWageArray.reduce(totalDaysEmployeeWorked,0));
+
 
     //UC9 Arrow functions
     const findTotal = (totalVal,dailyVal)=>{
@@ -156,6 +158,7 @@ function calcDailyWage(empHrs){
         });
     }
     console.log("Printing objects: "+empDailyHrsAndWageArray);
+
     //UC11 A - UC11 D
     let totalWages = empDailyHrsAndWageArray.filter(dailyHrsAndWage => dailyHrsAndWage.dailyWage >0)
                                             .reduce((totalWage,dailyHrsAndWage)=> totalWage+= dailyHrsAndWage.dailyWage,0);
@@ -175,3 +178,4 @@ function calcDailyWage(empHrs){
                                                 .map(dailyHrsAndWage=>dailyHrsAndWage.dayNum);
     console.log("11D- Non working days: "+noWorkingDays);
 }
+
