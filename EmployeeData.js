@@ -34,7 +34,11 @@ class EmployeeData{
         return this._name;
     }
     set name(name){
-        this._name = name;
+        let nameRegex = RegExp('^[A-Z]{1}[a-z]{2,}$');
+        if(nameRegex.test(name)){
+          this._name = name;
+        }
+        else throw 'Name is incorrect';
     }
 
     //toString
@@ -49,9 +53,16 @@ class EmployeeData{
 
 let employeeData = new EmployeeData(1,"Mark",30000);
 console.log(employeeData.toString());
-employeeData.name = "john";
-console.log(employeeData.toString());
-console.log(employeeData.toString());
+
+try{
+    employeeData.name = "john";
+    console.log(employeeData.toString());
+}
+catch(e){
+    console.error(e);
+}
 
 let newEmployeeData = new EmployeeData(1,"Terrisa",30000,"F",new Date());
 console.log(newEmployeeData.toString()); 
+let newEmployeeData2 = new EmployeeData(1,"Terr",30000,"F",new Date());
+console.log(newEmployeeData2.toString()); 
