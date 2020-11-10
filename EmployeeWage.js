@@ -22,3 +22,4 @@ let empCheck = Math.floor(Math.random()*10)%3;
 let empHrs = getWorkingHours(empCheck);
 let empWage = empHrs*WAGE_PER_HOUR;
 console.log("Emp hours = "+empHrs+" Employee wage = "+empWage);
+
