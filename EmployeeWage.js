@@ -76,3 +76,4 @@ function findFullTimeWage(dailyWage){
 }
 
 console.log("UC 7D - First time Full Time Wage earned on day: "+mapDayWithWageArr.find(findFullTimeWage));
+
