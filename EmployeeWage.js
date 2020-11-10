@@ -93,3 +93,13 @@ function isAnyPartTimeWage(dailyWage){
 
 console.log("UC 7F- Is part time wage present in any element? - "+mapDayWithWageArr.some(isAnyPartTimeWage));
 
+
+//UC7G - Find Number of days employee worked
+let noOfDays=0;
+function totalDaysEmployeeWorked(noOfDays,dailyWage){
+    if(dailyWage>0)
+        return noOfDays+1;
+    return noOfDays;
+}
+console.log("UC 7G- Number of days employee worked: "+empDailyWageArray.reduce(totalDaysEmployeeWorked,0));
+
