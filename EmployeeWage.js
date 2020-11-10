@@ -37,3 +37,4 @@ let empWage = calcDailyWage(totalEmpHrs);
 console.log("Daily Wage Array: "+empDailyWageArray);
 console.log("UC6: Total working days: "+totalWorkingDays);
 console.log("Total emp hours = "+totalEmpHrs+" Total employee wage = "+empWage);
+
