@@ -24,3 +24,4 @@ for(let day=0;day<NUM_OF_WORKING_DAYS;day++){
 
 let empWage = totalEmpHrs*WAGE_PER_HOUR;
 console.log("Total emp hours = "+totalEmpHrs+" Total employee wage = "+empWage);
+
